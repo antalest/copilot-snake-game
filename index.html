@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Snake Game</title>
+    <style>
+        /* Add CSS styles here */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to right, #f0f0f0, #ffffff);
+            font-family: 'Arial', sans-serif;
+        }
+        #game {
+            border: 5px solid #000;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            margin: 20px;
+        }
+        #score {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <p>Use arrow keys to move the snake</p>
+    <canvas id="game" width="512" height="512"></canvas>
+    <div id="score">Score: 0</div>
+    <script src="snake.js"></script>
+</body>
+</html>
